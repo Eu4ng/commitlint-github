@@ -68,4 +68,3 @@ Conventional Commits 검사 자동화 도구로 husky 를 이용해 githook 을 
 - [효율적인 커밋 메세지 관리를 위한 Conventional Commits 적용하기 | 블로그](https://blog.flynnpark.dev/13)
 - [Conventional Commits | 공식 문서](https://www.conventionalcommits.org/ko/v1.0.0/)
 - [husky | GitHub](https://github.com/typicode/husky)
-ㄴ
