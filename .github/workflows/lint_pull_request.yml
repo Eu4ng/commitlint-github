@@ -1,0 +1,16 @@
+﻿name: Lint Pull Request
+on:
+    pull_request:
+        types:
+            - opened
+            - synchronize
+            - edited
+
+jobs:
+    check-pull-request-title:
+        name: Lint Pull Request
+        if: github.event.action != 'edited' || github.event.changes.title.from
+        runs-on: ubuntu-latest
+        steps:
+              - name: Check Pull Request Title
+                uses: Eu4ng/action-lint-pull-request@main
