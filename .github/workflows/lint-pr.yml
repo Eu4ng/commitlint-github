@@ -1,0 +1,15 @@
+﻿name: Lint PR
+on:
+  pull_request:
+    types:
+      - opened
+      - synchronize
+      - edited
+
+jobs:
+  lint-pr:
+    if: github.event.action != 'edited' || github.event.changes.title.from
+    runs-on: ubuntu-latest
+    steps:
+      - name: Lint PR
+        uses: Eu4ng/action-lint-pull-request@main
