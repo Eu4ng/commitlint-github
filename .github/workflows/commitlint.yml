@@ -1,5 +1,14 @@
 name: Lint Commit Messages
-on: pull_request
+on:
+  # develop 브랜치에 push 할 때
+  push:
+    branches:
+      - develop
+
+  # master 브랜치로 PR 할 때
+  pull_request:
+    branches:
+      - master
 
 jobs:
   commitlint:
