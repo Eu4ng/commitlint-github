@@ -1,9 +1,10 @@
-name: Lint Commit Messages
+name: Lint Commit
 on:
-  # feature 브랜치에 push 할 때
+  # feature, hotfix 브랜치에 push 할 때
   push:
     branches:
       - feature/**
+      - hotfix/**
 
   # develop, master/main 브랜치로 PR 할 때
   pull_request:
@@ -13,10 +14,12 @@ on:
       - main
 
 jobs:
-  commitlint:
+  lint-commit:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout
+        uses: actions/checkout@v4
         with:
           fetch-depth: 0
-      - uses: wagoid/commitlint-github-action@v5
+      - name: Lint commit
+        uses: wagoid/commitlint-github-action@v5
