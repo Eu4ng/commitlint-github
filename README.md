@@ -14,8 +14,9 @@ GitHub 저장소에 Commitlint 를 쉽고 빠르게 적용하기 위한 파일 �
 
     ```
     # npm
-    node_modules
+    node_modules/
     package-lock.json
+    */package-lock.json
     ```
 5. git clone 후 npm 패키지 설치 (이 때 husky 는 자동으로 설치됩니다)
 
@@ -28,11 +29,12 @@ GitHub 저장소에 Commitlint 를 쉽고 빠르게 적용하기 위한 파일 �
 1. Release 된 `commitlint-github.zip` 파일 다운로드 후 압축 해제
 2. GitHub 저장소의 루트 디렉토리에 붙여넣기
 3.  필요에 따라 `.gitignore` 을 수정하거나 새로운 `.gitignore` 에 아래 내용 추가
-   
+
     ```
     # npm
-    node_modules
+    node_modules/
     package-lock.json
+    */package-lock.json
     ```
 5. git clone 후 npm 패키지 설치 (이 때 husky 는 자동으로 설치됩니다)
 
