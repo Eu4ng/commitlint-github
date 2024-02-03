@@ -1,12 +1,12 @@
-# commitlint-github
+# Template Commitlint
 
-GitHub 저장소에 Commitlint 를 쉽고 빠르게 적용하기 위한 파일 묶음입니다.
+GitHub 저장소에 Commitlint 를 쉽고 빠르게 적용하기 위한 템플릿입니다.
 
 ## 사용 방법
 
 아래 두 가지 방법 중 한 가지를 선택하여 사용하시면 됩니다.
 
-### (1) 템플릿으로 저장소 생성
+### 템플릿으로 저장소 생성
 
 1. `Use this template` 버튼 클릭 후 GitHub 저장소 생성
 2.  `README.md` 삭제
@@ -24,7 +24,7 @@ GitHub 저장소에 Commitlint 를 쉽고 빠르게 적용하기 위한 파일 �
     npm i
     ```
 
-### (2) 저장소에 직접 추가
+### 저장소에 직접 추가
 
 1. Release 된 `commitlint-github.zip` 파일 다운로드 후 압축 해제
 2. GitHub 저장소의 루트 디렉토리에 붙여넣기
@@ -42,6 +42,10 @@ GitHub 저장소에 Commitlint 를 쉽고 빠르게 적용하기 위한 파일 �
     npm i
     ```
 
+## Branch protection rule 권장 설정
+
+![image](https://github.com/Eu4ng/template-commitlint/assets/59055049/ce306e72-ac22-47c5-a558-365b6bfc14e2)
+
 ## 결과
 
 ### 로컬 저장소
@@ -55,19 +59,7 @@ GitHub 저장소에 Commitlint 를 쉽고 빠르게 적용하기 위한 파일 �
 GitHub Action 을 통해 commitlint 검사가 이루어지며, 올바르지 않은 형식의 커밋 메시지가 포함된 경우 상태 검사가 실패 처리됩니다.
 만약 Branch protection rule 에서 `Require status checks to pass before merging` 항목이 체크되어 있고, `Status checks that are required` 에 `commitlint` 가 추가되어 있는 경우에는 상태 검사 실패 시 병합 버튼이 비활성화됩니다.
 
----
-
-![image](https://github.com/Eu4ng/commitlint-github/assets/59055049/713be550-a73c-4648-b058-dfeacfdde2ac)
-
----
-
 ![image](https://github.com/Eu4ng/commitlint-github/assets/59055049/46b407a8-78a9-44b4-9326-faf11af14351)
-
----
-
-## Branch protection rule 권장 설정
-
-![image](https://github.com/Eu4ng/commitlint-github/assets/59055049/62991c07-8f85-472b-8ee9-c79bc2b030df)
 
 ## 참고
 
